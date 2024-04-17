@@ -35,8 +35,8 @@ return(
     }}>
         <Navbar/>
 
-        <div id="content" className="z-10 text-white flex flex-row-reverse">
-            <div className="row w-1/2">
+        <div id="content" className="relative z-10 text-white flex flex-row-reverse">
+            <div className="row w-1/2 pr-4">
                  <h2 className="text-2xl font-bold" style={{transition: 'opacity 1s ease-in-out'}}>{h2Text}</h2>
                  <h1 className="text-6xl font-bold" style={{transition: 'opacity 1s ease-in-out'}}>{h1Text}</h1>
             </div>

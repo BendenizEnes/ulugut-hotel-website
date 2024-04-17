@@ -1,7 +1,16 @@
+import './Navbar.css'
 const Navbar = () => {
-
+    const checkScroll = () => {
+        const navbar = document.querySelector('.navbar');
+        if(window.scrollY > 50){
+            navbar.classList.add('scrolled');
+        } else {
+            navbar.classList.remove('scrolled')
+        }
+    }
+    window.addEventListener('scroll',checkScroll);
     return (
-        <div className="flex justify-around items-center bg-transparent text-white fixed top-0 left-0 w-screen pt-1">
+        <div className="navbar flex justify-around items-center fixed top-0 left-0 w-screen pt-1">
             <div className="logo inline-block text-3xl font-bold">
                 <a href="/">Ulugut Hotel</a>
             </div>
