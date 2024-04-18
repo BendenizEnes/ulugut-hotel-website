@@ -4,7 +4,7 @@ import { faBell,faUtensils,faBed,faBath,faPersonSwimming } from '@fortawesome/fr
 
 function Card() {
     return(
-        <div className="cards style={} ">
+        <div className="cards">
             <div className="card">
                 <div className="iconContainer pl-6 pl-6">
                 <FontAwesomeIcon icon={faBell} size="2xl"/></div>
