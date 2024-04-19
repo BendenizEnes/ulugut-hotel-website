@@ -15,6 +15,16 @@
     height: 100%;
     background: rgba(12, 12, 12, 0.5);
 }
+
+.aboutHeader::before{
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 105%;
+    height: 50%;
+    background: rgba(12, 12, 12, 0.5);
+}
 #content{
     z-index: 10;
     max-width: 1300px;

@@ -1,18 +1,15 @@
-import Header from "../Components/Header/Header.jsx";
-import Features from "../Components/Features/Features.jsx";
-import Gallery from "../Components/Gallery/Gallery.jsx";
-import Footer from "../Components/Footer/Footer.jsx";
-import Testimonials from "../Components/Tesitimonials/Testimonials.jsx";
+import {Route,Routes,} from "react-router-dom";
+import Home from "../pages/Home/Home.jsx";
+import About from "../pages/About/About.jsx";
 function App() {
 
   return (
-    <>
-        <Header/>
-        <Features></Features>
-        <Gallery></Gallery>
-        <Testimonials></Testimonials>
-        <Footer></Footer>
-    </>
+   <Routes>
+       <Route path="/" element={<Home/>}></Route>
+       <Route path="/about" element={<About/>}></Route>
+       <Route path="/ourRooms" element={<Home/>}></Route>
+       <Route path="/contact" element={<Home/>}></Route>
+   </Routes>
   )
 }
 

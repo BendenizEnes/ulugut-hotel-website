@@ -4,7 +4,7 @@ import {useState, useEffect} from "react";
 
 function Header() {
 
-    const images = ['url("public/images/herobg1.jpg")','url("public/images/herobg2.jpg")']
+    const images = ['url("images/herobg1.jpg")','url("images/herobg2.jpg")']
     const h2texts = ['Enjoy Your Holiday','MORE THAN A HOTEL...']
     const h1texts = ['Refuel Your Energy and Discover the Beauties of Denizli','Hotel for the whole family, all year around']
 
