@@ -12,7 +12,7 @@ const Form = () => {
     return (
         <div className="bg-white border-none shadow-[0_0_5px_3px_rgba(144,144,144,.1)] flex-[2] px-5 pt-2 pb-5">
             <h1 className="font-bold pt-5">Get in Touch</h1>
-            <h2 className="pt-3 text-[#21cc7a]">This Section is Currently not Available </h2>
+            <h2 className="pt-3 text-[#21cc7a]">This Section is Currently Unavailable </h2>
 
             <form action="" className="flex flex-col px-5 py-8 gap-10">
                 <section className="w-full">
