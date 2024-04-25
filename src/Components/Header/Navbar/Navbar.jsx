@@ -1,5 +1,6 @@
 import './Navbar.css'
 import {NavLink} from "react-router-dom";
+import Currency from "../../Currency/Currency.jsx";
 const Navbar = () => {
     const checkScroll = () => {
         const navbar = document.querySelector('.navbar');
@@ -12,6 +13,8 @@ const Navbar = () => {
     window.addEventListener('scroll',checkScroll);
     return (
         <div className="navbar flex justify-around items-center fixed top-0 left-0 w-screen pt-1">
+            <Currency/>
+
             <div className="logo inline-block text-3xl font-bold">
                 <NavLink to="/">Ulugut Hotel</NavLink>
             </div>
