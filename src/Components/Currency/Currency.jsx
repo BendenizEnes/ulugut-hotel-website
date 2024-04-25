@@ -7,8 +7,9 @@ const Currency = () => {
 
     useEffect(() => {
         const fetchData = async () => {
+            const apiKey = import.meta.env.VITE_CURRENCY_API_KEY
             for (const currency of Currencies) {
-                let url = `https://v6.exchangerate-api.com/v6/ad043a495bfa68c372a6b503/latest/${currency.country}`;
+                let url = `https://v6.exchangerate-api.com/v6/${apiKey}/latest/${currency.country}`;
                 try {
                     const response = await fetch(url);
                     const result = await response.json();
@@ -73,7 +74,6 @@ const Currency = () => {
             <Slider {...settings}>
             {Object.entries(exchangeRates).map(([country, data]) => (
                 <div key={country}>
-
                     {country} : {data.rate} TRY
                 </div>
             ))}</Slider>
