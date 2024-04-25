@@ -1,6 +1,7 @@
 import './Navbar.css'
 import {NavLink} from "react-router-dom";
 import Currency from "../../Currency/Currency.jsx";
+import Weather from "../../Weather/Weather.jsx";
 const Navbar = () => {
     const checkScroll = () => {
         const navbar = document.querySelector('.navbar');
@@ -26,6 +27,8 @@ const Navbar = () => {
                     <li className="pl-10 p-5"><NavLink to="/contact">Contact</NavLink></li>
                 </ul>
             </div>
+
+            <Weather/>
         </div>
     )
 }
